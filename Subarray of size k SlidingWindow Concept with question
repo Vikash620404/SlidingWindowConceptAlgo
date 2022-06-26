@@ -1,0 +1,43 @@
+Important Question on Sliding Window
+** Fixed Size
+  1)Max/Min subarray of size k
+  2)1st -ve in every window size of k
+  3) count occurance of anagram
+  4)Max of all subarray of size k
+  5)Max of min for every window size
+
+
+** Variable Size
+   1)Largest/Smallest subarray of sum k
+   2)Largest substring of k distnict character
+   3)Length of largest of no repeating character
+   4)Pick toy
+   5)Minimun window substring
+  
+   1)Max/Min subarray of size k
+class SlidingWindow{
+public int maxSum(int[]arr,int k,int n){
+int i,j,sum,max=0;
+while(i<n&&j<n){
+sum+=arr[j];
+if(j-i+1<k){}
+j++;
+}else if(j-i+1==k){
+max=Math.max(max,sum);
+sum-=arr[i];
+i++;j++;
+}
+return max;
+}
+public static void main(String[]args){
+int[]arr={3,6,9,8,7,5,2,1,4};
+int n=arr.length;
+int k=3;
+int n=arr.length;
+SlidingWindow al=new SlidingWindow()
+System.out.println(al.maxSum(arr,k,n));
+
+}
+
+}
+

@@ -1,0 +1,46 @@
+2)1st -ve in every window size of k
+
+class SlidingWindow{
+public int[] findFirstNegativeNumbers firstNegative(int[]arr,int k,int n){
+ int[] firstNegativeNumbers = new int[n - k + 1];
+Queue<Integer> q = new LinkedList<>();
+int idx = 0;
+int i,j=0;
+while(j<n){
+if(arr[j]<0){
+ans.add(arr[j]);
+}
+if(j-i+1<k){}
+j++;
+}else if(j-i+1==k){
+ if (q.isEmpty()) {
+                    firstNegativeNumbers[idx++] = 0;
+                } else {
+                    int num = q.peek();
+                    firstNegativeNumbers[idx++] = num;
+
+                   
+                    if (num == a[windowStart]) {
+                        q.remove();
+                    }
+i++;j++;
+}
+return findFirstNegativeNumbers;
+
+}
+public static void main(String[]args){
+int[]arr={3,6,9,8,7,5,2,1,4};
+int n=arr.length;
+int k=3;
+int n=arr.length;
+SlidingWindow al=new SlidingWindow()
+System.out.println(al.firstNegative(arr,k,n));
+
+}
+
+}
+
+
+
+//Time Complexity = O(n)
+//Space Complexity = O(n)
